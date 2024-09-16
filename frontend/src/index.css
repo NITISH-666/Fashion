@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@font-face {
+    font-family: "Brusher";
+    src : url('./fonts/Brillotus.otf');
+}
+@font-face {
+    font-family: 'Fashionora';
+    src: url('./fonts/Allura-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'HM-Sans Regular';
+    src: url('./fonts/HMSans-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'HM-Sans Bold';
+    src: url('./fonts/HMSans-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'HM-Sans SemiBold';
+    src: url('./fonts/HMSans-SemiBold.woff2');
+}
+
+
+.Fashionora {
+    font-family: "Brusher";
+    letter-spacing: 3px;
+}
+
+
+.logo-red {
+    margin-top: 1em;
+    /* background: linear-gradient(65deg, #e33131, #a4a1a1); */
+    /* background: linear-gradient(to right, #bd3636, #ffb366); */
+    background: linear-gradient(to right, #2b6ee9, #90a2bf);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 3em;
+        -webkit-text-stroke: 0.4px black;
+        text-stroke : 1px black;
+}
+
+.hmbold {
+    font-family: 'HM-Sans Bold';
+}
+
+
+html {
+    font-family: 'HM-Sans Regular';
+}
+
+
+.carousel-img {
+    transition: scale 0.05s;
+    margin : 0px 10px;
+    margin-bottom: 40px;
+}
+
+.carousel-img:hover {
+    scale : 1.2;
+    transition: scale 0.05s;
+    
+}
+
+.card {
+    transition: scale 0.2s;
+}
+
+.card:hover {
+        scale: 1.1;
+        transition: scale 0.2s;
+}
+
+
+.card li::marker{
+    content: "\2022  ";
+}
+
+
+
+
+#searchbar {
+    outline: 1px solid black;
+    color : #000;
+    border-bottom-left-radius: 3vh;
+    border-top-left-radius: 3vh;
+    border : none;
+    text-align: center;
+}
+
+#searchbar:focus::placeholder {
+    color : transparent
+}
+
+.search-icon {
+    border-top-right-radius : 3vh;
+    border-bottom-right-radius: 3vh;
+    outline : 1px solid black;
+    margin-bottom: 4px;
+}
+
+
+.displayer {
+    border-top-left-radius : 0;
+    border-bottom-left-radius : 0;
+}
+
+
+
+.display-ul {
+    list-style: none;
+    counter-reset: none;
+}
+
+.display-ul li::marker {
+    content: "\2023   ";
+
+}
+
